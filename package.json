@@ -1,0 +1,31 @@
+{
+  "name": "pricing-page-design",
+  "version": "1.0.0",
+  "description": "first sass project",
+  "keywords": [
+    "sass",
+    "pricing",
+    "page"
+  ],
+  "homepage": "https://github.com/zahooronly/pricing-page-design#readme",
+  "bugs": {
+    "url": "https://github.com/zahooronly/pricing-page-design/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahooronly/pricing-page-design.git"
+  },
+  "license": "ISC",
+  "author": "Zahoor Ahmad",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.90.0"
+  }
+}
