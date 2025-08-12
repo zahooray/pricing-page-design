@@ -1,0 +1,17 @@
+@use "../abstract/variables" as *;
+
+.btn {
+  background-color: $primary;
+  padding: $btn-padding-y $btn-padding-x;
+  color: $white;
+  border: 1px solid transparent;
+  border-radius: $btn-border-radius;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+  }
+}
