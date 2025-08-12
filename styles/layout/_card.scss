@@ -1,0 +1,6 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/variables" as *;
+
+.__title-wrapper {
+  @include flex-horizontal-center(1rem);
+}
