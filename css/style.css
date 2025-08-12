@@ -339,6 +339,27 @@ template {
   gap: 1rem;
 }
 
+.__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.__list > li::before {
+  content: "";
+  display: inline-block;
+  width: 1.30781rem;
+  height: 1.30781rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  background-image: url("../../assets/images/check-icon.svg");
+}
+.__list .__list-imp-text {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #101828;
+}
+
 .sidebar {
   background-color: #e2eeee;
   width: 7.5rem;
