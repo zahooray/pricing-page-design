@@ -376,12 +376,25 @@ template {
   margin-left: 7.5rem;
 }
 
+.table {
+  max-width: 75rem;
+  width: 100%;
+  margin: auto;
+}
+
 .__table-row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4.5rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  text-align: left;
+  height: 2.875rem;
+}
+.__table-row:first-child {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .__icon-cell {
