@@ -1,0 +1,17 @@
+@use "../abstract/mixin" as *;
+@use "../abstract/variables" as *;
+
+.__table-row {
+  @include flex-horizontal-center(4.5rem);
+  justify-content: space-evenly;
+}
+
+.__icon-cell {
+  @include flex-horizontal-center(0.62rem);
+}
+.__avatar-cell {
+  @include flex-horizontal-center(0.38rem);
+}
+.__invoice-cell {
+  @include flex-horizontal-center(0.25rem);
+}
