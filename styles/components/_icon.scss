@@ -1,0 +1,10 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.icon {
+  height: $icon-height;
+  width: $icon-width;
+  background-color: $icon-bg-color;
+  border-radius: 7px;
+  @include flex-center;
+}
