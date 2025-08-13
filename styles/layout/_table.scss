@@ -1,5 +1,4 @@
-@use "../abstract/mixin" as *;
-@use "../abstract/variables" as *;
+@use "../vendors/all" as *;
 
 .table {
   max-width: 75rem;

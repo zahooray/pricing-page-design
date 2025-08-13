@@ -1,24 +1,12 @@
-// 1. Configuration and helpers
-@use "./abstract/variables" as *;
-@use "./abstract/mixin" as *;
-// 2. Vendors: include media mixins imported from node_modules
-@use "./vendors/normalize" as *;
+@use "./vendors/all" as *;
 
-// 3. import Swiper and modules styles
-
-// 4. Base styles and elements
 @use "./base/fonts" as *;
 
-// 5. Components
 @use "./components/button" as *;
 @use "./components/icon" as *;
 
-// 6. Layout-related sections
 @use "./layout/card" as *;
 @use "./layout/sidebar" as *;
 @use "./layout/main" as *;
 @use "./layout/table" as *;
 @use "./layout/price-section" as *;
-// 7. Page-specific styles
-
-// 8. Themes

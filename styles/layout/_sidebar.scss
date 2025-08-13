@@ -1,5 +1,4 @@
-@use "../abstract/variables" as *;
-@use "../abstract/mixin" as *;
+@use "../vendors/all" as *;
 
 .sidebar {
   background-color: $sidebar-background;

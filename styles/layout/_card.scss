@@ -1,5 +1,4 @@
-@use "../abstract/mixin" as *;
-@use "../abstract/variables" as *;
+@use "../vendors/all" as *;
 
 .card {
   border-left: 1px solid $price-section-border-color;
