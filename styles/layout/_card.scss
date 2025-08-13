@@ -46,7 +46,16 @@
   padding: 0;
   margin: 0;
   text-align: left;
-  color: $primary-lighten;
+  & > li {
+    @include flex-horizontal-center;
+    justify-content: start;
+    padding: 0;
+    margin: 0;
+    & > p {
+      color: $primary-lighten;
+      margin: 5px;
+    }
+  }
   & > li::before {
     content: "";
     display: inline-block;

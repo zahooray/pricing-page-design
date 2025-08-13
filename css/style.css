@@ -381,7 +381,19 @@ template {
   padding: 0;
   margin: 0;
   text-align: left;
+}
+.__list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+}
+.__list > li > p {
   color: #6f6c90;
+  margin: 5px;
 }
 .__list > li::before {
   content: "";
