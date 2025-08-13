@@ -468,6 +468,14 @@ template {
   align-items: center;
   padding-bottom: 2rem;
 }
+.sidebar > .__lower-sidebar .__glasses-icon-item {
+  position: relative;
+}
+.sidebar > .__lower-sidebar .__glasses-icon-item :last-child {
+  position: absolute;
+  top: 27%;
+  left: 18%;
+}
 
 .main {
   margin-left: 7.5rem;
