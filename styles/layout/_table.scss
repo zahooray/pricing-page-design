@@ -14,36 +14,36 @@
   }
 }
 
-.__table-row-1 {
+.table-row-1 {
   grid-area: 1 / 1 / 2 / 7;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
 }
-.__table-row-2 {
+.table-row-2 {
   grid-area: 2 / 1 / 3 / 7;
 }
-.__table-row-3 {
+.table-row-3 {
   grid-area: 3 / 1 / 4 / 7;
 }
-.__table-row-4 {
+.table-row-4 {
   grid-area: 4 / 1 / 5 / 7;
 }
 
-.__table-row {
+.table-row {
   display: contents;
   text-align: start;
 }
 
-.__icon-cell {
+.icon-cell {
   @include flex-horizontal-center(0.62rem);
   justify-content: start;
 }
-.__avatar-cell {
+.avatar-cell {
   @include flex-horizontal-center(0.38rem);
   justify-content: start;
 }
-.__invoice-cell {
+.invoice-cell {
   @include flex-horizontal-center(0.25rem);
   justify-content: start;
 }
