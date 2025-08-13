@@ -433,11 +433,13 @@ template {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 .sidebar > .__upper-sidebar li:hover {
-  border-radius: 0.5rem;
-  background: #ebe9ff;
   border: 1px solid #7c5bff;
+  background: #ebe9ff;
 }
 .sidebar > .__upper-sidebar li:hover > svg, .sidebar > .__upper-sidebar li:hover > svg path {
   fill: #7c5bff;
