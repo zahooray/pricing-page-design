@@ -315,6 +315,7 @@ template {
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  margin-bottom: 2.44rem;
 }
 .btn:hover {
   background-color: #fff;
@@ -335,6 +336,7 @@ template {
 .card {
   border-left: 1px solid #c9c7ff;
   text-align: center;
+  flex: 1;
   padding: 0 2rem;
 }
 .card:first-child {
@@ -346,6 +348,7 @@ template {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin: 0 0 3rem 0;
 }
 
 .__credits {
@@ -353,7 +356,7 @@ template {
   font-style: normal;
   font-weight: 500;
   color: #000;
-  margin: auto;
+  margin: 0 0 1.19rem 0;
 }
 
 .__price {
@@ -361,7 +364,7 @@ template {
   font-style: normal;
   font-weight: 700;
   color: #7c5bff;
-  margin: auto;
+  margin: 0 0 1.19rem 0;
 }
 
 .__tagline {
@@ -370,6 +373,7 @@ template {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  margin: 0 0 1.69rem 0;
 }
 
 .__list {
@@ -377,6 +381,7 @@ template {
   padding: 0;
   margin: 0;
   text-align: left;
+  color: #6f6c90;
 }
 .__list > li::before {
   content: "";
@@ -384,7 +389,10 @@ template {
   width: 1.30781rem;
   height: 1.30781rem;
   margin-right: 0.75rem;
-  background-image: url("../../assets/images/check-icon.svg");
+  background-image: url("../../assets/icons/check-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .__list .__list-imp-text {
   font-size: 1rem;

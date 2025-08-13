@@ -4,6 +4,7 @@
 .card {
   border-left: 1px solid $price-section-border-color;
   text-align: center;
+  flex: 1;
   &:first-child {
     border-left: none;
   }
@@ -12,6 +13,7 @@
 
 .__title-wrapper {
   @include flex-horizontal-center(1rem);
+  margin: 0 0 3rem 0;
 }
 
 .__credits {
@@ -19,7 +21,7 @@
   font-style: normal;
   font-weight: 500;
   color: $black;
-  margin: auto;
+  margin: 0 0 1.19rem 0;
 }
 
 .__price {
@@ -27,7 +29,7 @@
   font-style: normal;
   font-weight: 700;
   color: $primary;
-  margin: auto;
+  margin: 0 0 1.19rem 0;
 }
 
 .__tagline {
@@ -36,6 +38,7 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+  margin: 0 0 1.69rem 0;
 }
 
 .__list {
@@ -43,13 +46,18 @@
   padding: 0;
   margin: 0;
   text-align: left;
+  color: $primary-lighten;
   & > li::before {
     content: "";
     display: inline-block;
     width: 1.30781rem;
     height: 1.30781rem;
     margin-right: 0.75rem;
-    background-image: url("../../assets/images/check-icon.svg");
+
+    background-image: url("../../assets/icons/check-icon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
   }
   .__list-imp-text {
     font-size: 1rem;
