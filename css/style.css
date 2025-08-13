@@ -468,6 +468,9 @@ template {
   align-items: center;
   padding-bottom: 2rem;
 }
+.sidebar > .__lower-sidebar li {
+  cursor: pointer;
+}
 .sidebar > .__lower-sidebar .__glasses-icon-item {
   position: relative;
 }
