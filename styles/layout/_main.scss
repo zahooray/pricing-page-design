@@ -3,4 +3,13 @@
 
 .main {
   margin-left: $sidebar-width;
+  padding: 0 2.06rem;
+}
+
+.__section-heading {
+  color: $secondary;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }

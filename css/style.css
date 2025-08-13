@@ -334,7 +334,11 @@ template {
 
 .card {
   border-left: 1px solid #c9c7ff;
-  border-right: 1px solid #c9c7ff;
+  text-align: center;
+  padding: 0 2rem;
+}
+.card:first-child {
+  border-left: none;
 }
 
 .__title-wrapper {
@@ -372,6 +376,7 @@ template {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 .__list > li::before {
   content: "";
@@ -423,12 +428,20 @@ template {
 
 .main {
   margin-left: 7.5rem;
+  padding: 0 2.06rem;
+}
+
+.__section-heading {
+  color: #101828;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .table {
   max-width: 75rem;
   width: 100%;
-  margin: auto;
 }
 
 .__table-row {
@@ -465,4 +478,16 @@ template {
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
+}
+
+.price-section {
+  border: 1px solid #c9c7ff;
+  padding: 1.62rem 0;
+  max-width: 75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 3.75rem;
 }
