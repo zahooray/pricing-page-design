@@ -1,6 +1,9 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixin" as *;
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 .main {
   margin-left: $sidebar-width;
   padding: 0 0 4.87rem 2.06rem;
