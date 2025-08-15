@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul,
 ol,
 li {
@@ -109,7 +116,7 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar > .upper-sidebar {
+.sidebar .upper-sidebar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +129,7 @@ li {
   padding: 0;
   list-style-type: none;
 }
-.sidebar > .upper-sidebar li {
+.sidebar .upper-sidebar li {
   display: flex;
   width: 3.875rem;
   height: 2.4375rem;
@@ -134,14 +141,15 @@ li {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.sidebar > .upper-sidebar li:hover {
+.sidebar .upper-sidebar li:hover {
   border: 1px solid #7c5bff;
   background: #ebe9ff;
 }
-.sidebar > .upper-sidebar li:hover > svg, .sidebar > .upper-sidebar li:hover > svg path {
+.sidebar .upper-sidebar li:hover svg,
+.sidebar .upper-sidebar li:hover svg path {
   fill: #7c5bff;
 }
-.sidebar > .lower-sidebar {
+.sidebar .lower-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,31 +161,23 @@ li {
   align-items: center;
   padding-bottom: 2rem;
 }
-.sidebar > .lower-sidebar li {
+.sidebar .lower-sidebar li {
   cursor: pointer;
 }
-.sidebar > .lower-sidebar .glasses-icon {
+.sidebar .lower-sidebar .glasses-icon {
   position: relative;
 }
-.sidebar > .lower-sidebar .glasses-icon :last-child {
+.sidebar .lower-sidebar .glasses-icon :last-child {
   position: absolute;
   top: 27%;
   left: 18%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .main {
   margin: 0 5.44rem 0 7.5rem;
   padding: 0 0 4.87rem 2.06rem;
 }
-
-.section-heading {
+.main h2 {
   color: #101828;
   font-size: 1.75rem;
   font-style: normal;
@@ -186,41 +186,35 @@ body {
 }
 
 .table {
-  max-width: 75rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   list-style-type: none;
-}
-.table.table time {
-  align-self: center;
+  border-radius: 8px;
+  border: 1px solid #ebeef1;
 }
 
 .table-row-1 {
-  grid-area: 1/1/2/7;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
-}
-
-.table-row-2 {
-  grid-area: 2/1/3/7;
-}
-
-.table-row-3 {
-  grid-area: 3/1/4/7;
+  background-color: #F6F8FA;
 }
 
 .table-row-4 {
-  grid-area: 4/1/5/7;
+  border: none;
 }
 
 .table-row {
-  display: contents;
+  border-bottom: 1px solid #ebeef1;
+  padding-left: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
   text-align: start;
+}
+.table-row :last-child {
+  border-bottom: none;
+}
+.table-row time {
+  align-self: center;
 }
 
 .icon-cell {
@@ -255,6 +249,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  margin: auto;
   border-radius: 0.5rem;
   margin-bottom: 3.75rem;
 }
