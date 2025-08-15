@@ -42,36 +42,32 @@ li {
 .card:first-child {
   border-left: none;
 }
-
-.card-title-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 0 0 3rem 0;
-}
-.card-title-wrapper h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.card-credits-heading {
+.card .card-credits-heading {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   color: #000;
   margin: 0 0 1.19rem 0;
 }
-
-.card-price-heading {
+.card .card-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 3rem 0;
+}
+.card .card-title-wrapper h3 {
+  margin: 0;
+  padding: 0;
+}
+.card .card-price-heading {
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
   color: #7c5bff;
   margin: 0 0 1.19rem 0;
 }
-
-.card-tagline {
+.card .card-tagline {
   margin: auto;
   color: #6f6c90;
   font-size: 1rem;
@@ -79,11 +75,10 @@ li {
   font-weight: 400;
   margin: 0 0 1.69rem 0;
 }
-
-.card-pricing-benefits-list {
+.card .card-pricing-benefits-list {
   text-align: left;
 }
-.card-pricing-benefits-list > ::before {
+.card .card-pricing-benefits-list > ::before {
   content: "";
   width: 1.30781rem;
   height: 1.30781rem;
@@ -92,11 +87,11 @@ li {
   background-size: contain;
   position: absolute;
 }
-.card-pricing-benefits-list p {
+.card .card-pricing-benefits-list p {
   color: #6f6c90;
   margin-left: 1.5rem;
 }
-.card-pricing-benefits-list .card-pricing-benefits-list-imp-text {
+.card .card-pricing-benefits-list .card-pricing-benefits-list-imp-text {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;

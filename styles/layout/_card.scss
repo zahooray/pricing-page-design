@@ -8,64 +8,56 @@
     border-left: none;
   }
   padding: 0 2rem;
-}
-
-.card-title-wrapper {
-  @include flex-horizontal-center(1rem);
-  margin: 0 0 3rem 0;
-  h3 {
-    margin: 0;
-    padding: 0;
+  .card-credits-heading {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    color: $black;
+    margin: 0 0 1.19rem 0;
   }
-}
-
-.card-credits-heading {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 500;
-  color: $black;
-  margin: 0 0 1.19rem 0;
-}
-
-.card-price-heading {
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  color: $primary;
-  margin: 0 0 1.19rem 0;
-}
-
-.card-tagline {
-  margin: auto;
-  color: $primary-lighten;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 400;
-  margin: 0 0 1.69rem 0;
-}
-
-.card-pricing-benefits-list {
-  // list-style-type: none;
-  // padding: 0;
-  // margin: 0;
-  text-align: left;
-  & > ::before {
-    content: "";
-    width: 1.30781rem;
-    height: 1.30781rem;
-    background-image: url("../../assets/icons/check-icon.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
+  .card-title-wrapper {
+    @include flex-horizontal-center(1rem);
+    margin: 0 0 3rem 0;
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
   }
-  p {
-    color: $primary-lighten;
-    margin-left: 1.5rem;
-  }
-  .card-pricing-benefits-list-imp-text {
-    font-size: 1rem;
+  .card-price-heading {
+    font-size: 4rem;
     font-style: normal;
     font-weight: 700;
-    color: $secondary;
+    color: $primary;
+    margin: 0 0 1.19rem 0;
+  }
+  .card-tagline {
+    margin: auto;
+    color: $primary-lighten;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 1.69rem 0;
+  }
+  .card-pricing-benefits-list {
+    text-align: left;
+    & > ::before {
+      content: "";
+      width: 1.30781rem;
+      height: 1.30781rem;
+      background-image: url("../../assets/icons/check-icon.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+    }
+    p {
+      color: $primary-lighten;
+      margin-left: 1.5rem;
+    }
+    .card-pricing-benefits-list-imp-text {
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      color: $secondary;
+    }
   }
 }
