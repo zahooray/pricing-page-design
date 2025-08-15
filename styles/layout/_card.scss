@@ -10,7 +10,7 @@
   padding: 0 2rem;
 }
 
-.title-wrapper {
+.card-title-wrapper {
   @include flex-horizontal-center(1rem);
   margin: 0 0 3rem 0;
   h3 {
@@ -19,7 +19,7 @@
   }
 }
 
-.__credits {
+.card-credits-heading {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
@@ -27,7 +27,7 @@
   margin: 0 0 1.19rem 0;
 }
 
-.__price {
+.card-price-heading {
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
@@ -35,7 +35,7 @@
   margin: 0 0 1.19rem 0;
 }
 
-.__tagline {
+.card-tagline {
   margin: auto;
   color: $primary-lighten;
   font-size: 1rem;
@@ -44,34 +44,25 @@
   margin: 0 0 1.69rem 0;
 }
 
-.__list {
+.card-pricing-benefits-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   text-align: left;
-  & > li {
-    @include flex-horizontal-center;
-    justify-content: start;
-    padding: 0;
-    margin: 0;
-    & > p {
-      color: $primary-lighten;
-      margin: 5px;
-    }
-  }
-  & > li::before {
+  & > ::before {
     content: "";
-    display: inline-block;
     width: 1.30781rem;
     height: 1.30781rem;
-    margin-right: 0.75rem;
-
     background-image: url("../../assets/icons/check-icon.svg");
-    background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    background-size: contain;
+    position: absolute;
   }
-  .__list-imp-text {
+  p {
+    color: $primary-lighten;
+    margin-left: 1.5rem;
+  }
+  .card-pricing-benefits-list-imp-text {
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
