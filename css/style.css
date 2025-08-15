@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   background-color: #7c5bff;
   padding: 0.44rem 0.88rem;
@@ -73,9 +81,6 @@
 }
 
 .card-pricing-benefits-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   text-align: left;
 }
 .card-pricing-benefits-list > ::before {
