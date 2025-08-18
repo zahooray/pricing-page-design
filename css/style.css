@@ -82,10 +82,10 @@ li {
   font-weight: 400;
   margin: 0 0 1.69rem 0;
 }
-.card .card-pricing-benefits-list {
+.card .card-pricing-benefits-list li {
   text-align: left;
 }
-.card .card-pricing-benefits-list > ::before {
+.card .card-pricing-benefits-list li::before {
   content: "";
   width: 1.30781rem;
   height: 1.30781rem;
@@ -94,11 +94,11 @@ li {
   background-size: contain;
   position: absolute;
 }
-.card .card-pricing-benefits-list p {
+.card .card-pricing-benefits-list li p {
   color: #6f6c90;
   margin-left: 2rem;
 }
-.card .card-pricing-benefits-list .card-pricing-benefits-list-imp-text {
+.card .card-pricing-benefits-list li .card-pricing-benefits-list-imp-text {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -116,11 +116,11 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-.sidebar .upper-sidebar {
+
+.upper-sidebar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,7 +129,7 @@ li {
   padding: 0;
   list-style-type: none;
 }
-.sidebar .upper-sidebar li {
+.upper-sidebar li {
   display: flex;
   width: 3.875rem;
   height: 2.4375rem;
@@ -141,15 +141,16 @@ li {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.sidebar .upper-sidebar li:hover {
+.upper-sidebar li:hover {
   border: 1px solid #7c5bff;
   background: #ebe9ff;
 }
-.sidebar .upper-sidebar li:hover svg,
-.sidebar .upper-sidebar li:hover svg path {
+.upper-sidebar li:hover svg,
+.upper-sidebar li:hover svg path {
   fill: #7c5bff;
 }
-.sidebar .lower-sidebar {
+
+.lower-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,16 +162,8 @@ li {
   align-items: center;
   padding-bottom: 2rem;
 }
-.sidebar .lower-sidebar li {
+.lower-sidebar li {
   cursor: pointer;
-}
-.sidebar .lower-sidebar .glasses-icon {
-  position: relative;
-}
-.sidebar .lower-sidebar .glasses-icon :last-child {
-  position: absolute;
-  top: 27%;
-  left: 18%;
 }
 
 .main {
@@ -189,56 +182,59 @@ li {
   width: 100%;
   list-style-type: none;
   border-radius: 8px;
-  border: 1px solid #ebeef1;
+  border: 1px solid #ababab;
+  overflow: hidden;
 }
-
-.table-row-1 {
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 600;
-  background-color: #F6F8FA;
-}
-
-.table-row-4 {
-  border: none;
-}
-
-.table-row {
-  border-bottom: 1px solid #ebeef1;
-  padding-left: 5px;
-  grid-template-columns: repeat(6, 1fr);
-  display: grid;
-  text-align: start;
-}
-.table-row :last-child {
+.table :last-child {
   border-bottom: none;
 }
-.table-row time {
-  align-self: center;
-}
-
-.icon-cell {
+.table .icon-cell {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.62rem;
   justify-content: start;
 }
-
-.avatar-cell {
+.table .avatar-cell {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.38rem;
   justify-content: start;
 }
-
-.invoice-cell {
+.table .invoice-cell {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
   justify-content: start;
+}
+
+.table-header {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  background-color: #e2e2e2;
+  padding-left: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  text-align: start;
+  border-bottom: 1px solid #ababab;
+}
+
+.table-row {
+  padding-left: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  text-align: start;
+  transition: all 0.1s ease-in;
+  border-bottom: 1px solid #ababab;
+}
+.table-row time {
+  align-self: center;
+}
+.table-row:hover {
+  background-color: rgba(227, 227, 227, 0.5725490196);
 }
 
 .price-section {
