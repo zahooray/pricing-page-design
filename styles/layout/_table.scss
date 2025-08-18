@@ -1,0 +1,54 @@
+@use "../vendors/imports" as *;
+
+.table-wrapper {
+  overflow: auto;
+}
+
+.table {
+  min-width: 830px;
+  width: calc(100% - 2px);
+  list-style-type: none;
+  border-radius: 8px;
+  border: 1px solid $table-border-color;
+  overflow-y: hidden;
+  :last-child {
+    border-bottom: none;
+  }
+  .icon-cell {
+    @include flex-horizontal-center;
+    gap: 0.62rem;
+    justify-content: start;
+  }
+  .avatar-cell {
+    @include flex-horizontal-center;
+    gap: 0.38rem;
+    justify-content: start;
+  }
+  .invoice-cell {
+    @include flex-horizontal-center;
+    gap: 0.25rem;
+    justify-content: start;
+  }
+}
+
+.table-header {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  background-color: $table-head-bg-color;
+  @include table-rows;
+  border-bottom: 1px solid $table-border-color;
+}
+
+.table-row {
+  @include table-rows;
+  transition: all 0.1s ease-in;
+  border-bottom: 1px solid $table-border-color;
+
+  time {
+    align-self: center;
+  }
+  &:hover {
+    background-color: $table-row-hover-color;
+  }
+}

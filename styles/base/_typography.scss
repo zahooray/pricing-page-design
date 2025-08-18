@@ -1,0 +1,13 @@
+@use "../vendors/imports" as *;
+h2 {
+  color: $secondary;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}

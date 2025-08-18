@@ -1,0 +1,25 @@
+@mixin flex-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin table-rows {
+  padding-left: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  gap: 4px;
+  text-align: start;
+}
