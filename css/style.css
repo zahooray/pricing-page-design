@@ -28,19 +28,19 @@ h3 {
 }
 
 .btn {
-  background-color: #7c5bff;
+  background-color: #fff;
+  color: #7c5bff;
+  border: 1px solid #7c5bff;
   padding: 0.44rem 0.88rem;
-  color: #fff;
-  border: 1px solid transparent;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   margin-bottom: 2.44rem;
 }
 .btn:hover {
-  background-color: #fff;
-  color: #7c5bff;
-  border: 1px solid #7c5bff;
+  color: #fff;
+  background-color: #7c5bff;
+  border: 1px solid transparent;
 }
 
 .icon {
@@ -91,10 +91,11 @@ h3 {
   font-weight: 400;
   margin: 0 0 1.69rem 0;
 }
-.card .card-pricing-benefits-list li {
+
+.pricing-card-benefits-list li {
   text-align: left;
 }
-.card .card-pricing-benefits-list li::before {
+.pricing-card-benefits-list li::before {
   content: "";
   width: 1.30781rem;
   height: 1.30781rem;
@@ -103,11 +104,11 @@ h3 {
   background-size: contain;
   position: absolute;
 }
-.card .card-pricing-benefits-list li p {
+.pricing-card-benefits-list li p {
   color: #6f6c90;
   margin-left: 2rem;
 }
-.card .card-pricing-benefits-list li .card-pricing-benefits-list-imp-text {
+.pricing-card-benefits-list li .pricing-card-benefits-list-bold-text {
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -181,11 +182,11 @@ h3 {
 }
 
 .table-wrapper {
-  min-width: 830px;
   overflow: auto;
 }
 
 .table {
+  min-width: 830px;
   width: calc(100% - 2px);
   list-style-type: none;
   border-radius: 8px;

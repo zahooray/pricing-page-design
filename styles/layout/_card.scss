@@ -35,26 +35,26 @@
     font-weight: 400;
     margin: 0 0 1.69rem 0;
   }
-  .card-pricing-benefits-list li {
-    text-align: left;
-    &::before {
-      content: "";
-      width: 1.30781rem;
-      height: 1.30781rem;
-      background-image: url("../../assets/icons/check-icon.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      position: absolute;
-    }
-    p {
-      color: $primary-lighten;
-      margin-left: 2rem;
-    }
-    .card-pricing-benefits-list-imp-text {
-      font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
-      color: $secondary;
-    }
+}
+.pricing-card-benefits-list li {
+  text-align: left;
+  &::before {
+    content: "";
+    width: 1.30781rem;
+    height: 1.30781rem;
+    background-image: url("../../assets/icons/check-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  p {
+    color: $primary-lighten;
+    margin-left: 2rem;
+  }
+  .pricing-card-benefits-list-bold-text {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    color: $secondary;
   }
 }
