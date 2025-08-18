@@ -14,6 +14,19 @@ li {
   margin: 0;
 }
 
+h2 {
+  color: #101828;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .btn {
   background-color: #7c5bff;
   padding: 0.44rem 0.88rem;
@@ -62,10 +75,6 @@ li {
   align-items: center;
   gap: 1rem;
   margin: 0 0 3rem 0;
-}
-.card .card-title-wrapper h3 {
-  margin: 0;
-  padding: 0;
 }
 .card .card-price-heading {
   font-size: 4rem;
@@ -169,13 +178,6 @@ li {
 .main {
   margin: 0 5.44rem 0 7.5rem;
   padding: 0 0 4.87rem 2.06rem;
-}
-.main h2 {
-  color: #101828;
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 
 .table {
