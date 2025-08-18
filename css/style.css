@@ -180,12 +180,17 @@ h3 {
   padding: 0 0 4.87rem 2.06rem;
 }
 
+.table-wrapper {
+  min-width: 830px;
+  overflow: auto;
+}
+
 .table {
-  width: 100%;
+  width: calc(100% - 2px);
   list-style-type: none;
   border-radius: 8px;
   border: 1px solid #ababab;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .table :last-child {
   border-bottom: none;
@@ -220,6 +225,7 @@ h3 {
   padding-left: 5px;
   grid-template-columns: repeat(6, 1fr);
   display: grid;
+  gap: 4px;
   text-align: start;
   border-bottom: 1px solid #ababab;
 }
@@ -228,6 +234,7 @@ h3 {
   padding-left: 5px;
   grid-template-columns: repeat(6, 1fr);
   display: grid;
+  gap: 4px;
   text-align: start;
   transition: all 0.1s ease-in;
   border-bottom: 1px solid #ababab;
