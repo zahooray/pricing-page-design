@@ -1,11 +1,11 @@
 @use "../vendors/all" as *;
 
 .table-wrapper {
-  min-width: 830px;
   overflow: auto;
 }
 
 .table {
+  min-width: 830px;
   width: calc(100% - 2px);
   list-style-type: none;
   border-radius: 8px;
