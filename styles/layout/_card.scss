@@ -1,4 +1,4 @@
-@use "../vendors/all" as *;
+@use "../vendors/imports" as *;
 
 .card {
   border-left: 1px solid $price-section-border-color;
