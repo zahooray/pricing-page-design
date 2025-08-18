@@ -5,41 +5,45 @@
   list-style-type: none;
   border-radius: 8px;
   border: 1px solid $table-border-color;
+  overflow: hidden;
+  :last-child {
+    border-bottom: none;
+  }
+  .icon-cell {
+    @include flex-horizontal-center;
+    gap: 0.62rem;
+    justify-content: start;
+  }
+  .avatar-cell {
+    @include flex-horizontal-center;
+    gap: 0.38rem;
+    justify-content: start;
+  }
+  .invoice-cell {
+    @include flex-horizontal-center;
+    gap: 0.25rem;
+    justify-content: start;
+  }
 }
 
-.table-row-1 {
+.table-header {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
   background-color: $table-head-bg-color;
-}
-.table-row-4 {
-  border: none;
+  @include table-rows;
+  border-bottom: 1px solid $table-border-color;
 }
 
 .table-row {
+  @include table-rows;
+  transition: all 0.1s ease-in;
   border-bottom: 1px solid $table-border-color;
-  padding-left: 5px;
-  :last-child {
-    border-bottom: none;
-  }
-  grid-template-columns: repeat(6, 1fr);
-  display: grid;
-  text-align: start;
+
   time {
     align-self: center;
   }
-}
-
-.icon-cell {
-  @include flex-horizontal-center(0.62rem);
-  justify-content: start;
-}
-.avatar-cell {
-  @include flex-horizontal-center(0.38rem);
-  justify-content: start;
-}
-.invoice-cell {
-  @include flex-horizontal-center(0.25rem);
-  justify-content: start;
+  &:hover {
+    background-color: $table-row-hover-color;
+  }
 }
